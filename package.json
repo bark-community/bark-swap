@@ -1,7 +1,7 @@
 {
   "name": "bark-swap",
   "version": "1.0.0",
-  "description": "Unlock a new era of decentralized transactions with BarkSwap – the ultimate platform designed for crypto enthusiasts. Seamlessly swap Bark tokens and a diverse array of tokens associated with Bark products, services, or community initiatives within the Solana blockchain ecosystem.",
+  "description": "Unlock a new era of decentralized exchange with BarkSwap",
   "private": true,
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",
@@ -17,6 +17,7 @@
     "@solana/wallet-adapter-react-ui": "^0.9.35",
     "@solana/wallet-adapter-wallets": "^0.19.32",
     "@solana/web3.js": "^1.91.4",
+    "@solana/spl-token": "0.4.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -33,12 +34,15 @@
     "stream-http": "^3.2.0",
     "tweetnacl": "^1.0.3",
     "url": "^0.11.3",
-    "web-vitals": "^2.1.4"
+    "dotenv": "16.4.5",
+    "web-vitals": "^2.1.4",
+    "typescript": "5.4.5",
+    "axios": "1.6.8"
   },
   "scripts": {
     "start": "react-app-rewired start --scripts-version react-scripts",
-    "build": "react-app-rewired build react-scripts --scripts-version  ",
-    "test": "react-app-rewired react-scripts test",
+    "build": "react-app-rewired build --scripts-version react-scripts@5.0.1",
+    "test": "react-app-rewired test --scripts-version react-scripts",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
