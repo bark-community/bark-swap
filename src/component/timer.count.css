@@ -1,0 +1,32 @@
+/* timer.count.css */
+
+/* Container for the timer */
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Individual timer item */
+.timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px; /* Add margin between timer items */
+    color: white; /* Set text color */
+}
+
+/* Timer value */
+.timer-item p {
+    font-size: 24px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Timer label */
+.timer-item span {
+    font-size: 14px; /* Adjust font size */
+    text-transform: uppercase; /* Convert text to uppercase */
+}

@@ -1,13 +1,14 @@
+/* Resetting default margins and font smoothing */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter UI', 'Segoe', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter UI', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Styling for code elements */
 code {
-  font-family: source-code-pro, Menlo, Courier-New, Monaco, Consolas, 'Inter',
-    monospace;
+  font-family: source-code-pro, Menlo, Courier New, Monaco, Consolas, 'Inter', monospace;
 }

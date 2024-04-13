@@ -1,0 +1,29 @@
+/* navbar.module.css */
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5D5E6C; /* Set the background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a black shadow */
+}
+
+/* Logo */
+.logo img {
+    max-width: 100px; /* Limit the logo's maximum width */
+}
+
+/* Icons container */
+.icons span {
+    margin-right: 10px; /* Add space between icons */
+    cursor: pointer; /* Set cursor to pointer */
+    color: white; /* Set icon color */
+    transition: transform 0.3s ease; /* Add transition effect for hover */
+}
+
+/* Hover effect for icons */
+.icons span:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}

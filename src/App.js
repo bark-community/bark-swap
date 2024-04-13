@@ -60,11 +60,7 @@ function App() {
   };
   return (
     <>
-
       <HomePage />
-
-
-
     </>
   );
 }

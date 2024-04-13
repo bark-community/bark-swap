@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const TimerCount = () => {
-    const [time, setTimeVar] = useState({
+    const [time, setTime] = useState({
         days: 0,
         hours: 0,
         minutes: 0,
@@ -9,14 +9,13 @@ const TimerCount = () => {
     });
 
     useEffect(() => {
-        const launchDateString = "July 20, 2024 12:00:00";
+        const launchDate = new Date("July 20, 2024 12:00:00").getTime();
 
-        function calculateRemainingTime(targetDate) {
+        const calculateRemainingTime = () => {
             const now = new Date().getTime();
-            const distance = targetDate - now;
+            const distance = launchDate - now;
 
             if (distance < 0) {
-                clearInterval(countdownInterval);
                 return {
                     days: 0,
                     hours: 0,
@@ -36,28 +35,20 @@ const TimerCount = () => {
                 minutes: minutes,
                 seconds: seconds
             };
-        }
+        };
 
-        try {
-            const targetDate = new Date(launchDateString).getTime();
+        const updateTimer = () => {
+            setTime(calculateRemainingTime());
+        };
 
-            if (isNaN(targetDate)) {
-                throw new Error("Invalid launch date");
-            }
+        updateTimer();
 
-            setTimeVar(calculateRemainingTime(targetDate));
+        const intervalId = setInterval(updateTimer, 1000);
 
-            const countdownInterval = setInterval(() => {
-                setTimeVar(prevTime => calculateRemainingTime(targetDate));
-            }, 1000);
-
-            return () => clearInterval(countdownInterval);
-        } catch (error) {
-            console.error("Error:", error.message);
-        }
+        return () => clearInterval(intervalId);
     }, []);
 
-    const addLeadingZero = value => {
+    const addLeadingZero = (value) => {
         return value < 10 ? `0${value}` : value;
     };
 
