@@ -1,0 +1,278 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('/public/font/DS-DIGI.ttf');
+    /* Add additional src declarations for different font formats if necessary */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* * {
+    font-size: small;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+#timerDiv {
+    position: relative;
+    font-family: 'Digital';
+    border-radius: 30px;
+    padding: 3px 40px;
+    background: linear-gradient(#41424b, #393941) padding-box,
+        linear-gradient(0deg, #5D5E6C, #41424b) border-box;
+    border: 5px solid transparent;
+    animation: gradientAnimation 5s infinite;
+}
+
+
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(18deg, #5D5E6C, #41424b) border-box;
+    }
+
+
+    5% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(36deg, #5D5E6C, #41424b) border-box;
+    }
+
+    10% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(54deg, #5D5E6C, #41424b) border-box;
+    }
+
+    15% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(72deg, #5D5E6C, #41424b) border-box;
+    }
+
+    20% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(90deg, #5D5E6C, #41424b) border-box;
+    }
+
+    25% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(108deg, #5D5E6C, #41424b) border-box;
+    }
+
+    30% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(126deg, #5D5E6C, #41424b) border-box;
+    }
+
+    35% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(144, #5D5E6C, #41424b) border-box;
+    }
+
+    40% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(162deg, #5D5E6C, #41424b) border-box;
+    }
+
+
+    45% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(180deg, #5D5E6C, #41424b) border-box;
+    }
+
+    50% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(198deg, #5D5E6C, #41424b) border-box;
+    }
+
+    55% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(216deg, #5D5E6C, #41424b) border-box;
+    }
+
+    60% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(234deg, #5D5E6C, #41424b) border-box;
+    }
+
+    65% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(252deg, #5D5E6C, #41424b) border-box;
+    }
+
+    70% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(270deg, #5D5E6C, #41424b) border-box;
+    }
+
+    75% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(288deg, #5D5E6C, #41424b) border-box;
+    }
+
+    80% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(306deg, #5D5E6C, #41424b) border-box;
+    }
+
+    85% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(324deg, #5D5E6C, #41424b) border-box;
+    }
+
+    90% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(342deg, #5D5E6C, #41424b) border-box;
+    }
+
+    95% {
+        background: linear-gradient(#41424b, #393941) padding-box,
+            linear-gradient(360, #5D5E6C, #41424b) border-box;
+    }
+}
+
+/* .singleArm { */
+/* } */
+
+.timerDiv p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.timerDiv span {
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+    top: -25px;
+}
+
+nav {
+    position: relative;
+    /* border-bottom: 2px solid; */
+    /* background-image: linear-gradient(to right, #ff0000, #00ff00); */
+}
+
+nav::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    height: 1px;
+    /* Adjust the height as needed */
+    background-image: linear-gradient(to right, #5D5E6C, #444554, #5D5E6C);
+    /* Gradient colors */
+}
+
+
+
+.presaleText {
+    font-size: 40px;
+    -webkit-text-stroke-width: 2.5px;
+    -webkit-text-stroke-color: #737485;
+    -webkit-text-fill-color: white;
+}
+
+
+.inputStyle {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    padding-left: 30px;
+    width: 100%;
+    color: white;
+}
+
+.inputStyleBg {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 30px;
+    width: 100%;
+    color: white;
+}
+
+/* .inputMain {
+    background-color: #5D5E6C;
+} */
+
+.inputMain {
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #5D5E6C;
+    /* background-color: #5D5E6C; */
+    color: #fff;
+    border: none;
+    outline: none;
+    background-position: center;
+    transition: background 0.8s;
+    cursor: pointer;
+}
+
+.inputMain:hover {
+    background: #5D5E6C radial-gradient(circle, transparent 1%, #eeeef0 1%) center/15000%;
+}
+
+/* .inputMain:focus {
+    background: #5D5E6C radial-gradient(circle, #5D5E6C 1%, transparent 1%, ) center/15000%;
+    ;
+} */
+
+.inputMain:active {
+    background-color: #5D5E6C;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+
+
+
+.inputStyle:focus {
+    border: 1px solid white;
+}
+
+.mainPagebg {
+    background-color: #5D5E6C;
+    background-image: url('/public/background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+
+.walletList {
+    background: #1F1F1F;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.walletList:hover {
+    background: rgb(103, 101, 101);
+}
+
+.titleText {
+    background: linear-gradient(to right, #d9d9de, #9091a0, #5d5e6c, #41424b, #f7f7f8);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 950px) {
+    .mainPagebg {
+        background-color: #5D5E6C;
+        background-image: url('/public/background.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+            /* height: 100vh; */
+
+    }
+}
